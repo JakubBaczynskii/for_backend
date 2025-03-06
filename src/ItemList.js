@@ -1,4 +1,4 @@
-import LineItem from "./LineItem"
+import LineItem from './LineItem';
 
 const ItemList = ({ items, handleCheck, handleDelete }) => {
     return (
@@ -6,9 +6,9 @@ const ItemList = ({ items, handleCheck, handleDelete }) => {
             {items.map((item) => (
                 <LineItem
                     key={item.id}
-                    item = {item}
-                    handleCheck= {handleCheck}
-                    handleDelete= {handleDelete}
+                    item={item}
+                    handleCheck={handleCheck}
+                    handleDelete={handleDelete}
                 />
             ))}
         </ul>

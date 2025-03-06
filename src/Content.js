@@ -1,10 +1,10 @@
-import ItemList from './ItemList'
+import ItemList from './ItemList';
 
-const Content = ({items, handleCheck, handleDelete}) => {    
+const Content = ({ items, handleCheck, handleDelete }) => {
     return (
         <main>
             {items.length ? (
-                <ItemList 
+                <ItemList
                     items={items}
                     handleCheck={handleCheck}
                     handleDelete={handleDelete}
