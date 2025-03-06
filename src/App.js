@@ -6,7 +6,7 @@ import Footer from './Footer';
 import { useState } from 'react';
 
 function App() {
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')) || []);
   const [newItem, setNewItem] = useState('')
   const [search, setSearch] = useState('')
 
@@ -43,7 +43,7 @@ function App() {
     <div className="App">
       <Header title="Grocery List" />
       <AddItem
-        newItem={newItem}
+        newItem={newItem} 
         setNewItem={setNewItem}
         handleSubmit={handleSubmit}
       />
